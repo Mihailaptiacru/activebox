@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+.contanier {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+
+
+
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header__logo a {
+    font-size: 30px;
+    font-weight: 900;
+    color: #777;
+    text-decoration: none;
+
+    span {
+        color: #fff;
+        font-weight: 300;
+    }
+}
+
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 0;
+    border-bottom: 1px solid #7779;
+    align-items: center;
+}
+
+.nav a {
+    font-size: 13px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    opacity: 0.75;
+    transition: 0.1s linear;
+    padding-left: 50px;
+
+
+    &:hover {
+        text-decoration: underline;
+        opacity: 1;
+    }
+
+    &:first-child {
+        padding-left: 0;
+    }
+}
+
+.intro {
+    height: 750px;
+    padding-top: 120px;
+    background-image: linear-gradient(180deg, rgba(11, 7, 98, 0.8) 0%, rgba(59, 14, 164, 0.8183648459383753) 50%, rgba(109, 4, 173, 0.8) 100%), url("img/356-1900x750.jpg");
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .intro__inner {
+        width: 100%;
+        max-width: 970px;
+        margin: 0 auto;
+        text-align: center;
+
+    }
+
+    h1 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 65px;
+        color: #fff;
+        font-weight: 700;
+        text-align: center;
+
+    }
+
+    p {
+        font-size: 20px;
+        margin-top: 30px;
+        color: #fff;
+        font-weight: 400;
+        text-align: center;
+        line-height: 35px;
+    }
+
+    a {
+        display: inline-block;
+        margin-top: 30px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 13px;
+        color: #fff;
+        text-transform: uppercase;
+        background-color: #e84545;
+        padding: 14px 40px;
+        border-radius: 3px;
+    }
+}
